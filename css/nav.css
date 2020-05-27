@@ -37,6 +37,10 @@ nav a:hover {
   align-items: center;
   border-top: 1px solid #efefef;
   padding: 0px 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
 }
 
 .message-icon {

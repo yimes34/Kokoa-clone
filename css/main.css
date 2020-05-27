@@ -208,3 +208,16 @@ main {
     transform: none;
   }
 }
+
+/* setting.html */
+
+.basic-setting li,
+.advanced-setting li {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+}
+
+.basic-setting__menu i,
+.advanced-setting__menu i {
+  width: 35px;
+}

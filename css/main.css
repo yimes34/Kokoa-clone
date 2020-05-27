@@ -1,0 +1,210 @@
+main {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  margin: 20px 20px;
+}
+
+.chat-list {
+}
+
+.chat-list li,
+.friends-list li,
+.recommend-friends__list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px 5px 0px;
+}
+
+.chat1__column,
+.friends-list__column,
+.profile-my,
+.recommend-friends__column {
+  display: flex;
+  align-items: center;
+}
+
+.chat1__timestamp {
+  width: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+.profile-my {
+  padding: 15px 0px 20px 0px;
+}
+
+.friend-birthday {
+  padding: 15px 0px;
+}
+
+.present {
+  border: 2px solid #ff4081;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.friends {
+  padding: 15px 0px;
+}
+
+/* more.html */
+
+.more__profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-my__column {
+  font-size: 2em;
+}
+
+.kokoa-shop__list,
+.suggestions__list {
+  display: flex;
+  align-items: center;
+}
+
+.kokoa-shop a,
+.suggestions a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 20px 0px 0px;
+}
+
+.kokoa-shop__icon,
+.suggestions__icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.suggestions__icon {
+  padding: 5px;
+  background-color: #3f51b5;
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* find.html */
+
+.add-friends {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-friends a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.add-friends__icon {
+  font-size: 2em;
+}
+
+.add-friends__text {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* chat.html */
+
+.chat__messages {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat__messages li {
+  margin: 0px 0px 15px 0px;
+}
+
+.message__date {
+  width: 200px;
+  padding: 10px;
+  box-shadow: 0px 2px 3px 0px #cccccc;
+  font-size: 0.9em;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.message__incoming {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  animation: incoming-motion 0.5s ease-out forwards;
+}
+
+@keyframes incoming-motion {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.message__sender {
+  margin-bottom: 5px;
+}
+
+.s-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.message__content {
+  display: flex;
+  background-color: #ff4081;
+  padding: 15px;
+  border-radius: 0px 30px 30px 30px;
+  color: white;
+}
+
+.message__bubble {
+  padding: 0px 15px;
+}
+
+.message__sent {
+  align-self: flex-end;
+  background-color: #303f9f;
+  color: white;
+  padding: 15px;
+  border-radius: 30px 30px 0px 30px;
+  animation: outgoing-motion 0.5s ease-out forwards;
+}
+
+@keyframes outgoing-motion {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}

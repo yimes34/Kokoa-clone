@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chats | Kokoa Clone</title>
+    <script
+      src="https://kit.fontawesome.com/5c4c9418b4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="screen">
+        <div class="status-bar">
+          <div class="status-bar__column">
+            <span class="status-bar__colck">22:04</span>
+          </div>
+          <div class="status-bar__column">
+            <i class="fab fa-bluetooth-b"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-battery-full"></i>
+          </div>
+        </div>
+        <header>
+          <h1>Friends</h1>
+          <div class="header__column">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-user-plus"></i></a>
+            <a href="settings.html"><i class="fas fa-cog"></i></a>
+          </div>
+        </header>
+        <main>
+          <section class="profile-my">
+            <img src="images/profile_my.png" class="avatar g-avatar" />
+            <div class="profile-content">
+              <h3 class="my-name">Gabby Yim</h3>
+              <span class="status-message">headache...</span>
+            </div>
+          </section>
+          <section class="friend-birthday">
+            <h2>Birthday</h2>
+            <ul class="friends-list">
+              <a href="#">
+                <li class="friend-info">
+                  <div class="friends-list__column">
+                    <img src="images/profile_0002.png" class="avatar" />
+                    <div class="profile-content">
+                      <h3 class="friend-name">Pretty Daughter</h3>
+                      <span class="status-message">It's my bday!</span>
+                    </div>
+                    <div class="friends-list__column"></div>
+                  </div>
+                  <span class="present"
+                    >Present <i class="fas fa-gift"></i
+                  ></span>
+                </li>
+              </a>
+            </ul>
+          </section>
+          <section class="friends">
+            <h2>Friends 5</h2>
+            <ul class="friends-list">
+              <li class="friend-info">
+                <a href="#"
+                  ><div class="friends-list__column">
+                    <img src="images/profile_0003.png" class="avatar" />
+                    <div class="profile-content">
+                      <h3 class="friend-name">Big Dipper</h3>
+                      <span class="status-message">Cute girl</span>
+                    </div>
+                  </div></a
+                >
+                <a href="#"><span class="friend-music"></span></a>
+              </li>
+            </ul>
+          </section>
+        </main>
+        <nav>
+          <a href="friends.html" class="nav__friends selected"
+            ><i class="fas fa-users"></i
+          ></a>
+          <a href="index.html" class="nav__chat"
+            ><i class="fas fa-comments"></i
+          ></a>
+          <a href="find.html" class="nav__find"
+            ><i class="fas fa-search"></i
+          ></a>
+          <a href="more.html" class="nav__more"><i class="fas fa-bars"></i></a>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>

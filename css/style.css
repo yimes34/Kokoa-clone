@@ -1,0 +1,79 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;600;800&family=Fredoka+One&family=Galada&display=swap");
+@import url("status-bar.css");
+@import url("header.css");
+@import url("main.css");
+@import url("nav.css");
+
+* {
+  box-sizing: border-box;
+}
+
+* a {
+  color: #3f3f3f;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  background-color: #efefef;
+  color: #3f3f3f;
+}
+
+.wrapper {
+  margin: 50px auto;
+  width: 30%;
+  max-width: 500px;
+  min-width: 400px;
+  border-radius: 30px;
+  background-color: #fafafa;
+  padding: 10px;
+  box-shadow: 1px 1px 3px #dddddd, 0px 0px 5px #dddddd inset;
+  height: 800px;
+}
+
+.screen {
+  background-color: white;
+  border-radius: 30px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar {
+  width: 60px;
+  border-radius: 35%;
+  margin-right: 10px;
+}
+
+.g-avatar {
+  width: 70px;
+}
+
+.friend-name,
+.my-name {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.last-message,
+.status-message {
+  font-size: 0.9em;
+}
+
+h2 {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #999999;
+  margin-bottom: 15px;
+}
+
+section {
+  border-bottom: 1px solid #efefef;
+  padding: 20px 0px;
+}
+
+section:last-child {
+  border-bottom: none;
+  padding: 15px 0px;
+}
